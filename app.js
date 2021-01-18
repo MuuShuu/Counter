@@ -1,14 +1,15 @@
+const span = document.getElementById('number')
 const plusOne = document.getElementById('plus');
 plusOne.addEventListener('click', function(){
-    const number = Number(document.getElementById('number').innerHTML)
+    const number = Number(span.innerHTML)
     const newNumber = number + 1;
-    document.getElementById('number').innerHTML = newNumber;
+    span.innerHTML = newNumber;
 })
 
 const minusOne = document.getElementById('minus');
 minusOne.addEventListener('click', function() {
-    const number = Number(document.getElementById('number').innerHTML)
+    const number = Number(span.innerHTML)
     const newNumber = number - 1;
-    document.getElementById('number').innerHTML = newNumber;
+    span.innerHTML = newNumber;
 
 })
